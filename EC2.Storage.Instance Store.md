@@ -1,0 +1,4 @@
+- Ephemeral
+- Best performance
+- use cases: buffer, cache, temporary content
+- 
