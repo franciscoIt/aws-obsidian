@@ -30,7 +30,7 @@
 - Ec2
 - Private ip addresses
 - ALB
-- Health checks on **TCP,HTTP and HTTPS**
+- Health checks on **TCP, HTTP and HTTPS**
 ---
 
 #### 3. Gateway Load Balancer (GWLB)
@@ -102,4 +102,4 @@ When you deregister an instance from a load balancer (e.g., during a deployment,
 1. You signal the load balancer to deregister a target (instance, container, Lambda, etc.)
 2. The load balancer **stops sending new requests** to that target immediately
 3. It **waits** for existing, in-flight connections to complete naturally
-4. Once all connections finish (or the timeout is reached), the target is fully deregistered
+4. Once all connections finish (or the timeout is reached), the target is fully deregistered.

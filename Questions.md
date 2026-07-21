@@ -79,3 +79,29 @@ D - Transit Gateway simplifies the network by acting as a hub for all VPCs and t
 
 ![[Pasted image 20260629123311.png]]
 https://aws.amazon.com/fsx/lustre/
+
+![[Pasted image 20260713143506.png]]
+
+![[Pasted image 20260713152055.png]]
+
+
+![[Pasted image 20260713160602.png]]
+**Por qué SÍ es B:**
+
+- Aprovecha **IAM Identity Center**, que la empresa ya está usando (mencionado explícitamente en el enunciado) — no se introduce una herramienta nueva ni un sistema paralelo de gestión de identidades.
+- Los **permission sets** son la forma nativa y recomendada de IAM Identity Center para otorgar acceso granular con privilegio mínimo a recursos como RDS y S3.
+- Asignar equipos a **grupos** (en vez de usuarios individuales) simplifica enormemente la administración: cuando alguien se une o sale del equipo, solo se gestiona la membresía del grupo, no políticas individuales.
+- Esto es precisamente el patrón de "least operational overhead": gestión centralizada, basada en grupos, con permission sets reutilizables — todo dentro del mismo sistema que ya usan.
+
+![[Pasted image 20260713173425.png]]
+
+
+![[Pasted image 20260713173650.png]]
+
+![[Pasted image 20260713174213.png]]
+
+
+![[Pasted image 20260720133008.png]]
+
+
+![[Pasted image 20260720153159.png]]
